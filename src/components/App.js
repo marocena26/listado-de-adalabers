@@ -1,13 +1,15 @@
 import "../styles/App.scss";
-import contacts from "../data/contacts.json";
-import { useState } from "react";
+// import contacts from "../data/contacts.json";
+import { useState , useEffect  } from "react";
+import callToApi from '../services/api';
+import ls from '../services/localstorage';
 
 function App() {
   //VARIABLES ESTADO
 
   //Variable estado con los datos iniciales.
 
-  const [data, setData] = useState(contacts.results);
+  const [data, setData] = useState(ls.get('data', []));
 
   //Variable estado objeto para guardar los datos de las nuevas adalabers que quiero añadir.
 
@@ -19,7 +21,15 @@ function App() {
 
   //Variable estado para filtrar los elementos
 
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState(ls.get('search', ''));
+
+  //USE EFFECT
+
+  useEffect(() => {
+    callToApi().then((response) => {
+      setData(response);
+    });
+  }, []);
 
   //FUNCIONES
 
@@ -46,12 +56,14 @@ function App() {
   //Función para filtrar
 
   const handleSearch = (ev) => {
+    ls.set('search', ev.target.value);
     setSearch(ev.target.value);
   };
 
   //Fución para pintar en el HTML la lista de contactos.
 
   const htmlData = data
+
   .filter(
     (contact) =>
       contact.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -79,6 +91,7 @@ function App() {
           id="search"
           placeholder="Ej: María"
           onInput={handleSearch}
+          value={search}
         />
         <label htmlFor="">Escoge una tutora:</label>
         <select onClick={handleSearch}>
