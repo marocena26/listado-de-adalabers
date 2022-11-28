@@ -75,10 +75,12 @@ Para filtrar por nombre:
 Para filtrar por tutora:
 
 1. Añade un <select> a la cabecera que tenga las siguientes opciones:
+       
 - Cualquiera (es la opción por defecto)
 - Yanelis
 - Dayana
 - Iván
+       
 2. Añade la funcionalidad para que, cuando la usuaria cambie ese <select>, el listado de Adalabers se re-pinte mostrando solo las que coincidan con la opción seleccionada (aplicando también el filtrado por nombre, si procede).
 
 ### 4º Mostrar redes sociales (BONUS)
