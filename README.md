@@ -55,10 +55,10 @@ Y cuando se vean todos los datos, nos ocuparemos del fetch para obtener los dato
 A continuación, queremos añadir los datos de una compañera nueva. Para ello seguiremos los siguientes pasos:
 
 1. Crear un formulario con los campos:
-        - Nombre de la compañera
-        - Nombre de su tutora
-        - Especialidad en la que destaca
-        - Un botón para Añadir una nueva Adalaber.
+- Nombre de la compañera
+- Nombre de su tutora
+- Especialidad en la que destaca
+- Un botón para Añadir una nueva Adalaber.
        
 2. Cuando la usuaria pulse en el botón, hay que añadir la Adalaber al listado de alumnas para que ésta aparezca en la tabla.
 
@@ -75,10 +75,10 @@ Para filtrar por nombre:
 Para filtrar por tutora:
 
 1. Añade un <select> a la cabecera que tenga las siguientes opciones:
-        - Cualquiera (es la opción por defecto)
-        - Yanelis
-        - Dayana
-        - Iván
+- Cualquiera (es la opción por defecto)
+- Yanelis
+- Dayana
+- Iván
 2. Añade la funcionalidad para que, cuando la usuaria cambie ese <select>, el listado de Adalabers se re-pinte mostrando solo las que coincidan con la opción seleccionada (aplicando también el filtrado por nombre, si procede).
 
 ### 4º Mostrar redes sociales (BONUS)
