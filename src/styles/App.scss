@@ -96,10 +96,10 @@
       padding: 10px 10px 10px 10px;
       transition: background-color 1s, transform 1s;
       &:hover {
-        background-color:$persian-green;
+        background-color: $persian-green;
         color: $davys-grey;
         transform: scale(1.05);
+      }
     }
   }
-}
 }
