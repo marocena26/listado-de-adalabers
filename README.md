@@ -38,15 +38,14 @@ Para **filtrar por nombre**:
 2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
 
 Para **filtrar por tutora**:
-
-1. Añade un <select> a la cabecera que tenga las siguientes opciones:
+1. Añade un `select` a la cabecera que tenga las siguientes opciones:
 
 - Cualquiera (es la opción por defecto)
 - Yanelis
 - Dayana
 - Iván
-
-2. Añade la funcionalidad para que, cuando la usuaria cambie ese `<select>`, el listado de Adalabers se re-pinte mostrando solo las que coincidan con la opción seleccionada.
+ 
+2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
 
 ### 4º Mostrar redes sociales
 
@@ -63,17 +62,16 @@ Implementa la funcionalidad de traer los datos desde el servidor cuando se cargu
 
 ### 6º Maquetación libre
 
-<img width="949" alt="image" src="https://user-images.githubusercontent.com/113302094/205404169-a4030c32-ec00-499c-b903-44c10d65ca84.png">
+![image](https://user-images.githubusercontent.com/113302094/205404853-49c98df7-549c-426a-b74b-21b96198291e.png)
 
 ## Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
 
-Este proyecto se ha realizado utilizando una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas, como es el Adalab web starter kit. Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. Para poder trabajar con él se debe tener previamente instalado Node JS.
+Este proyecto se ha realizado utilizando React.
 
 ### Pasos a seguir cada vez que se quiere arrancar un proyecto desde cero:
 
-- Crea tu propio repositorio.
-- Descarga el Starter kit desde **[GitHub](https://github.com/Adalab/Adalab-web-starter-kit)**.
-- Copia todos los ficheros en la carpeta raíz del repositorio.
+- Clona este repositorio en tu ordenador.
+- Ábrelo en tu editor de código.
 - Abre una terminal e instala las dependencias locales ejecutando en la terminal de comando:
 
 ```bash
@@ -88,14 +86,6 @@ npm install
 npm start
 ```
 
-Este comando:
-
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-  - Convierte los ficheros SASS en CSS.
-  - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
-
 Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
 ## Resultado final✨:
@@ -103,3 +93,5 @@ Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros 
 Puedes echar un vistazo a cómo quedó en Github Pages: **[Módulo 3: Ejercicio de evaluación intermedia](https://beta.adalab.es/modulo-3-evaluacion-intermedia-marocena26/)**.
 
 Cualquier aportación será bien recibida, ¡Muchas gracias! 😉.
+
+
