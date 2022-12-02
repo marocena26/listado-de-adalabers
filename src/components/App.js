@@ -63,11 +63,9 @@ function App() {
       setData([...data, newContact]);
       setNewContact({
         //ESTO PARA QUE CUANDO HAGAMOS CLICK SE BORRE LO QUE HEMOS ESCRITO.
-        id: crypto.randomUUID(),
         name: "",
         counselor: "",
         speciality: "",
-        social_networks: [],
       });
     }
   };
