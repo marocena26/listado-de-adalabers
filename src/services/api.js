@@ -10,6 +10,7 @@ const callToApi = () => {
             name: result.name,
             counselor: result.counselor,
             speciality: result.speciality,
+            social_networks: result.social_networks,
           };
         });
         return result;

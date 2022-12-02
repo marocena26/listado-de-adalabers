@@ -14,9 +14,11 @@ function App() {
   //Variable estado objeto para guardar los datos de las nuevas adalabers que quiero añadir.
 
   const [newContact, setNewContact] = useState({
+    id: crypto.randomUUID(),
     name: "",
     counselor: "",
     speciality: "",
+    social_networks: [],
   });
 
   //Variable estado para filtrar los elementos a través del buscador
@@ -50,9 +52,11 @@ function App() {
     setData([...data, newContact]);
     setNewContact({
       //ESTO PARA QUE CUANDO HAGAMOS CLICK SE BORRE LO QUE HEMOS ESCRITO.
+      id: crypto.randomUUID(),
       name: "",
       counselor: "",
       speciality: "",
+      social_networks: [],
     });
   };
 
@@ -66,7 +70,7 @@ function App() {
 
   //Función para filtrar en el buscador
 
-  const handleSearch = (ev) => {
+  const handleSearchName = (ev) => {
     ls.set("search", ev.target.value);
     setSearch(ev.target.value);
   };
@@ -88,16 +92,28 @@ function App() {
     )
 
     .filter((contact) => {
-      return searchCounselor === '' ? true : contact.counselor.toLowerCase() ===
-      searchCounselor.toLowerCase();
+      return searchCounselor === ""
+        ? true
+        : contact.counselor.toLowerCase() === searchCounselor.toLowerCase();
     })
 
-    .map((oneContact, index) => {
+    .map((contact) => {
       return (
-        <tr key={index}>
-          <td>{oneContact.name}</td>
-          <td>{oneContact.counselor}</td>
-          <td>{oneContact.speciality}</td>
+        <tr key={contact.id}>
+          <td>{contact.name}</td>
+          <td>{contact.counselor}</td>
+          <td>{contact.speciality}</td>
+          <td>
+            {contact.social_networks.map((search, index) => {
+              return (
+                <li key={index}>
+                  <a href={search.url} target="_blank">
+                    {search.name}
+                  </a>{" "}
+                </li>
+              );
+            })}
+          </td>
         </tr>
       );
     });
@@ -117,7 +133,7 @@ function App() {
             name="search"
             id="search"
             placeholder="Ej: María"
-            onInput={handleSearch}
+            onInput={handleSearchName}
             value={search}
           />
           <label htmlFor="">Escoge una tutora:</label>
@@ -135,6 +151,7 @@ function App() {
               <th>Nombre</th>
               <th>Tutora</th>
               <th>Especialidad</th>
+              <th>RRSS</th>
             </tr>
           </thead>
           <tbody>{htmlData}</tbody>
