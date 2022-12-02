@@ -1,1 +1,69 @@
-@import 'core/reset';
+@import "./core/reset";
+@import "./core/Variables.scss";
+
+.body {
+  height: 100%;
+  padding: 50px;
+  background-color: $white;
+  line-height: 1.6;
+  font-family: $font-family;
+}
+
+.header {
+  margin-bottom: 20px;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: $persian-green;
+  }
+}
+
+.form__section {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  &--label {
+    margin: 10px;
+  }
+  &--select {
+    padding: 3px;
+  }
+  &--input {
+    padding: 2px;
+  }
+}
+
+.table {
+  text-align: center;
+  background-color: $illuminating-emerald;
+  height: 600px;
+  overflow-y: scroll;
+  &__section {
+    width: 100%;
+    height: 100vh;
+    &--thead {
+      background-color: $davys-grey;
+      color: $white;
+      font-weight: 700;
+      border: 1px solid $davys-grey;
+      position: sticky;
+      top: 0px;
+    }
+    &--tbody {
+      &--td {
+        padding: 15px;
+      }
+    }
+  }
+}
+.thead__categories{
+    padding: 10px;
+}
+
+.td__list {
+  list-style: none;
+  &--link {
+    text-decoration: none;
+    color: $black;
+  }
+}

@@ -1,10 +1,11 @@
 function SearchForm(props) {
-    
   return (
     <>
-      <label htmlFor="">Nombre:</label>
+      <label className="form__section--label" htmlFor="">
+        Nombre:
+      </label>
       <input
-        className="new-contact__input"
+        className="form__section--input"
         type="text"
         name="search"
         id="search"

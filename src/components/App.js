@@ -1,4 +1,5 @@
 import "../styles/App.scss";
+
 // import contacts from "../data/contacts.json";
 import { useState, useEffect } from "react";
 import callToApi from "../services/api";
@@ -110,14 +111,14 @@ function App() {
     .map((contact) => {
       return (
         <tr key={contact.id}>
-          <td>{contact.name}</td>
-          <td>{contact.counselor}</td>
-          <td>{contact.speciality}</td>
-          <td>
+          <td className="table__section--tbody--td">{contact.name}</td>
+          <td className="table__section--tbody--td">{contact.counselor}</td>
+          <td className="table__section--tbody--td">{contact.speciality}</td>
+          <td className="table__section--tbody--td">
             {contact.social_networks.map((search, index) => {
               return (
-                <li key={index}>
-                  <a href={search.url} target="_blank">
+                <li className="td__list" key={index}>
+                  <a className="td__list--link" href={search.url} target="_blank">
                     {search.name}
                   </a>{" "}
                 </li>
@@ -132,26 +133,32 @@ function App() {
     <div className="app">
       <Header></Header>
 
-      <main>
-        <form action="">
-          <SearchForm
-            handleSearchName={handleSearchName}
-            search={search}
-          ></SearchForm>
-          <SearchSelect
-            handleSearchCounselor={handleSearchCounselor}
-            searchCounselor={searchCounselor}
-          ></SearchSelect>
-        </form>
+      <main className="main">
+        <section className="form">
+          <form className="form__section">
+            <SearchForm
+              handleSearchName={handleSearchName}
+              search={search}
+            ></SearchForm>
+            <SearchSelect
+              handleSearchCounselor={handleSearchCounselor}
+              searchCounselor={searchCounselor}
+            ></SearchSelect>
+          </form>
+        </section>
 
-        <Table htmlData={htmlData}></Table>
+        <section className="table">
+          <Table htmlData={htmlData}></Table>
+        </section>
 
-        <NewAdalaber
-          handleSubmit={handleSubmit}
-          handleNewContact={handleNewContact}
-          newContact={newContact}
-          handleClick={handleClick}
-        ></NewAdalaber>
+        <section className="add">
+          <NewAdalaber
+            handleSubmit={handleSubmit}
+            handleNewContact={handleNewContact}
+            newContact={newContact}
+            handleClick={handleClick}
+          ></NewAdalaber>
+        </section>
       </main>
     </div>
   );
