@@ -62,7 +62,7 @@ Implementa la funcionalidad de traer los datos desde el servidor cuando se cargu
 
 ### 6º Maquetación libre
 
-<img width="949" alt="image" src="https://user-images.githubusercontent.com/113302094/205404169-a4030c32-ec00-499c-b903-44c10d65ca84.png">
+![image](https://user-images.githubusercontent.com/113302094/205404853-49c98df7-549c-426a-b74b-21b96198291e.png)
 
 ## Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
 
