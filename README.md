@@ -66,13 +66,12 @@ Implementa la funcionalidad de traer los datos desde el servidor cuando se cargu
 
 ## Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
 
-Este proyecto se ha realizado utilizando una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas, como es el Adalab web starter kit. Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. Para poder trabajar con él se debe tener previamente instalado Node JS.
+Este proyecto se ha realizado utilizando React.
 
 ### Pasos a seguir cada vez que se quiere arrancar un proyecto desde cero:
 
-- Crea tu propio repositorio.
-- Descarga el Starter kit desde **[GitHub](https://github.com/Adalab/Adalab-web-starter-kit)**.
-- Copia todos los ficheros en la carpeta raíz del repositorio.
+- Clona este repositorio en tu ordenador.
+- Ábrelo en tu editor de código.
 - Abre una terminal e instala las dependencias locales ejecutando en la terminal de comando:
 
 ```bash
@@ -86,14 +85,6 @@ npm install
 ```bash
 npm start
 ```
-
-Este comando:
-
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-  - Convierte los ficheros SASS en CSS.
-  - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
 
 Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
