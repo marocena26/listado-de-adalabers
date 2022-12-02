@@ -53,16 +53,23 @@ function App() {
   //Función click para que el nuevo contacto se pinte en la tabla
 
   const handleClick = (ev) => {
-    ev.preventDefault(); //no queremos que se recargue la página.
-    setData([...data, newContact]);
-    setNewContact({
-      //ESTO PARA QUE CUANDO HAGAMOS CLICK SE BORRE LO QUE HEMOS ESCRITO.
-      id: crypto.randomUUID(),
-      name: "",
-      counselor: "",
-      speciality: "",
-      social_networks: [],
-    });
+    //Validación del input para añadir una nueva adalaber
+    if (
+      newContact.name !== "" &&
+      newContact.counselor !== "" &&
+      newContact.speciality !== ""
+    ) {
+      ev.preventDefault(); //no queremos que se recargue la página.
+      setData([...data, newContact]);
+      setNewContact({
+        //ESTO PARA QUE CUANDO HAGAMOS CLICK SE BORRE LO QUE HEMOS ESCRITO.
+        id: crypto.randomUUID(),
+        name: "",
+        counselor: "",
+        speciality: "",
+        social_networks: [],
+      });
+    }
   };
 
   //Función handle para que no se nos envie el formulario al hacer click:
@@ -128,7 +135,6 @@ function App() {
       <Header></Header>
 
       <main>
-        
         <form action="">
           <SearchForm
             handleSearchName={handleSearchName}
@@ -148,7 +154,6 @@ function App() {
           newContact={newContact}
           handleClick={handleClick}
         ></NewAdalaber>
-
       </main>
     </div>
   );
