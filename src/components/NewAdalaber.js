@@ -1,11 +1,11 @@
 function NewAdalaber(props) {
   return (
     <>
-      <form onSubmit={props.handleSubmit}>
-        <h2>Añadir una adalaber</h2>
-        <label htmlFor="">Nombre:</label>
+      <h2 className="add__title">Añadir una adalaber</h2>
+      <form className="add__form" onSubmit={props.handleSubmit}>
+        <label className="add__form--label" htmlFor="">Nombre:</label>
         <input
-          className="new-contact__input"
+          className="add__form--input"
           type="text"
           name="name"
           id="name"
@@ -13,9 +13,9 @@ function NewAdalaber(props) {
           onInput={props.handleNewContact}
           value={props.newContact.name}
         />
-        <label htmlFor="">Tutora:</label>
+        <label className="add__form--label" htmlFor="">Tutora:</label>
         <input
-          className="new-contact__input"
+          className="add__form--input"
           type="text"
           name="counselor"
           id="counselor"
@@ -23,9 +23,9 @@ function NewAdalaber(props) {
           onInput={props.handleNewContact}
           value={props.newContact.counselor}
         />
-        <label htmlFor="">Especialidad:</label>
+        <label className="add__form--label" htmlFor="">Especialidad:</label>
         <input
-          className="new-contact__input"
+          className="add__form--input"
           type="text"
           name="speciality"
           id="speciality"
@@ -33,7 +33,7 @@ function NewAdalaber(props) {
           onInput={props.handleNewContact}
           value={props.newContact.speciality}
         />
-        <button onClick={props.handleClick}>Añadir una nueva Adalaber</button>
+        <button className="add__form--button" onClick={props.handleClick}>Añadir una nueva Adalaber</button>
       </form>
     </>
   );

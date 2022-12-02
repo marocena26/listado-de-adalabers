@@ -56,8 +56,8 @@
     }
   }
 }
-.thead__categories{
-    padding: 10px;
+.thead__categories {
+  padding: 10px;
 }
 
 .td__list {
@@ -66,4 +66,40 @@
     text-decoration: none;
     color: $black;
   }
+}
+
+.add {
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: $international-orange-golden-gate-bridge;
+    line-height: 1.6;
+    padding: 15px;
+  }
+  &__form {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    &--label {
+      margin: 10px;
+    }
+    &--input {
+      padding: 2px;
+    }
+    &--button {
+      margin-left: 10px;
+      background-color: $international-orange-golden-gate-bridge;
+      color: $white;
+      font-weight: 700;
+      border-radius: 20px;
+      border: none;
+      padding: 10px 10px 10px 10px;
+      transition: background-color 1s, transform 1s;
+      &:hover {
+        background-color:$persian-green;
+        color: $davys-grey;
+        transform: scale(1.05);
+    }
+  }
+}
 }
