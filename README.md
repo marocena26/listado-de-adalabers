@@ -38,15 +38,14 @@ Para **filtrar por nombre**:
 2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
 
 Para **filtrar por tutora**:
-
-1. Añade un <select> a la cabecera que tenga las siguientes opciones:
+1. Añade un `select` a la cabecera que tenga las siguientes opciones:
 
 - Cualquiera (es la opción por defecto)
 - Yanelis
 - Dayana
 - Iván
-
-2. Añade la funcionalidad para que, cuando la usuaria cambie ese `<select>`, el listado de Adalabers se re-pinte mostrando solo las que coincidan con la opción seleccionada.
+ 
+2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
 
 ### 4º Mostrar redes sociales
 
@@ -103,3 +102,5 @@ Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros 
 Puedes echar un vistazo a cómo quedó en Github Pages: **[Módulo 3: Ejercicio de evaluación intermedia](https://beta.adalab.es/modulo-3-evaluacion-intermedia-marocena26/)**.
 
 Cualquier aportación será bien recibida, ¡Muchas gracias! 😉.
+
+
