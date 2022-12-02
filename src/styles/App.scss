@@ -34,12 +34,8 @@
 }
 
 .table {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   background-color: $illuminating-emerald;
   height: 600px;
-  width: 80%;
   overflow-y: scroll;
   &__section {
     width: 100%;
