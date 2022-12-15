@@ -26,6 +26,9 @@ A continuación, queremos añadir los datos de una compañera nueva. Para ello s
 - Especialidad en la que destaca
 - Un botón para Añadir una nueva Adalaber.
 
+![image](https://user-images.githubusercontent.com/113302094/207946602-77567b5c-c630-4608-a0a4-42118736e60b.png)
+![image](https://user-images.githubusercontent.com/113302094/207946675-3c46dd21-c852-469f-be48-ee57d1c8df9f.png)
+
 2. Cuando la usuaria pulse en el botón, hay que añadir la Adalaber al listado de alumnas para que ésta aparezca en la tabla.
 
 ### 3º Filtrar el listado de Adalabers
@@ -37,6 +40,9 @@ Para **filtrar por nombre**:
 1. Añade un recuadro sobre la tabla del listado de alumnas donde la usuaria pueda escribir texto.
 2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
 
+![image](https://user-images.githubusercontent.com/113302094/207946346-fa11ee97-8ed3-476c-9ae8-caff3d8450ad.png)
+
+
 Para **filtrar por tutora**:
 1. Añade un `select` a la cabecera que tenga las siguientes opciones:
 
@@ -44,7 +50,9 @@ Para **filtrar por tutora**:
 - Yanelis
 - Dayana
 - Iván
- 
+
+![image](https://user-images.githubusercontent.com/113302094/207946227-b826c76b-9003-4db4-918a-9226828bee48.png)
+
 2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
 
 ### 4º Mostrar redes sociales
