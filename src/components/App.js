@@ -118,7 +118,12 @@ function App() {
             {contact.social_networks.map((search, index) => {
               return (
                 <li className="td__list" key={index}>
-                  <a className="td__list--link" href={search.url} target="_blank">
+                  <a
+                    className="td__list--link"
+                    href={search.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {search.name}
                   </a>{" "}
                 </li>
