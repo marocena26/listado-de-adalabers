@@ -1,105 +1,118 @@
 # Módulo 3: Ejercicio de evaluación intermedia👩🏻‍💻 
 
-Trabajo realizado por la alumna María Elena Arocena López durante la evaluación intermedia del Módulo 3: React.
+## 🚀 Introduction
 
-## Listado de Adalabers📄:
+In this repository you can find the files generated in the **mid evaluation of Module 3 - React** within **[Adalab](https://adalab.es/)'s Web Development Bootcamp - Promo Radia**.
 
-En el siguiente ejercicio desarrollaremos una **aplicación web sencilla con React** con el objetivo de que nos ayude a tener un registro de las compañeras que conforman esta promo y a apuntar la especialidad de cada una de ellas.
+The main objective is to develop a "Simple" web page with a list of the students of the Promo R of Adalab. The main **requirement** is that **React** is used for **development**.
 
-## Pasos a seguir🎯:
+> **NOTE:** Direct link to the project by clicking on the following **[link](https://marocena26.github.io/listado-de-adalabers/)**.
 
-### 1º Pintar el listado de Adalabers
+## 📝 Requirements
 
-Para empezar el ejercicio queremos:
+- **HTML 5**
+- **Sass**
+- **Flexbox and CSS Grid**
+- **React**
 
-1. Pintar una cabecera con un título que ponga Adalabers.
-2. Pintar el listado de Adalabers inicial. Para ello utilizaremos la siguiente API: https://beta.adalab.es/curso-intensivo-fullstack-recursos/apis/adalabers-v1/promo-radsajsd.json
+#### Render the list of Adalabers
 
-### 2º Añadir a una nueva Adalaber
+- Paint a **header** with a title that reads **Adalabers**.
+- **Render** the initial **list of Adalabers**. To do this we provide you with the data in the following [API](https://beta.adalab.es/curso-intensivo-fullstack-recursos/apis/adalabers-v1/promo-radsajsd.json).
 
-A continuación, queremos añadir los datos de una compañera nueva. Para ello seguiremos los siguientes pasos:
+#### Add a new Adalaber
 
-1. Crear un formulario con los campos:
+To **add the data** of a new partner we will follow these steps steps:
+- **Create a form** with the following fields:
+  - Name of the **classmate**
+  - Name of her **tutor**
+  - **Speciality** in which she excels
+  - A **button to Add** a new Adalaber.
+- When the user **clicks on the button**, the **Adalaber** must be **added to the list** of pupils so that it appears in the table.
 
-- Nombre de la compañera
-- Nombre de su tutora
-- Especialidad en la que destaca
-- Un botón para Añadir una nueva Adalaber.
+#### Filter the list of Adalabers (BONUS)
 
-![image](https://user-images.githubusercontent.com/113302094/207946602-77567b5c-c630-4608-a0a4-42118736e60b.png)
-![image](https://user-images.githubusercontent.com/113302094/207946675-3c46dd21-c852-469f-be48-ee57d1c8df9f.png)
+We will filter the pupils in two different ways: 
 
-2. Cuando la usuaria pulse en el botón, hay que añadir la Adalaber al listado de alumnas para que ésta aparezca en la tabla.
+- **By name**: Through a `<input>` of text type: the **list** of Adalabers will be render showing only those whose **name includes the text written** by the user.
+- **By tutor**: Through a `<select>`. This select placed in the header will have the following options:
+  - Cualquiera (es la opción por defecto)
+  - Yanelis
+  - Dayana
+  - Iván
 
-### 3º Filtrar el listado de Adalabers
-
-A continuación queremos filtrar las alumnas por nombre y por tutora.
-
-Para **filtrar por nombre**:
-
-1. Añade un recuadro sobre la tabla del listado de alumnas donde la usuaria pueda escribir texto.
-2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
-
-![image](https://user-images.githubusercontent.com/113302094/207946346-fa11ee97-8ed3-476c-9ae8-caff3d8450ad.png)
+When the user changes this `<select>`, the **list** of Adalabers will be render **showing only those that match the selected option**.
 
 
-Para **filtrar por tutora**:
-1. Añade un `select` a la cabecera que tenga las siguientes opciones:
+#### Add social networks (BONUS)
 
-- Cualquiera (es la opción por defecto)
-- Yanelis
-- Dayana
-- Iván
+A fourth column will be added to our table with links to the social networks each Adalaber has social networks that each Adalaber has.
 
-![image](https://user-images.githubusercontent.com/113302094/207946227-b826c76b-9003-4db4-918a-9226828bee48.png)
+## 🛠️ Tools
 
-2. Añade la funcionalidad para que, cuando la usuaria escriba en ese `<input>`, el listado de Adalabers se re-pinte mostrando solo las que su nombre incluya el texto que ha escrito la usuaria.
+The project has been developed with **'React Starter Kit'**, a framework created in node and gulp that has pre-installed and pre-configured functionalities. It also contains an **HTML template engine**, a **Sass preprocessor** and a local server, among other elements.
 
-### 4º Mostrar redes sociales
+The following tools have been used when solving the project:
 
-Después de pintar el listado, podemos intentar pintar una columna más en nuestra tabla con enlaces a las redes sociales que tiene cada Adalaber:
+- **HTML** (with partials for an easier lecture and project organization)
+- **CSS/Sass**
+  - **Variables, mixins and functions**
+  - **Flexbox**
+  - **CSS Grid**
+  - **Box model** (size, padding and margin)
+- **JavaScript library: React Native**
+  - **Local storage**
+  - Accessing and sending data to a server
+  - **Event management** in the browser
+  - **NodeJS**
+  - **API calls**: sending and retrieving data from a server
+  - **Tree structure**: organising the project with a tree-like hierarchy
+  - **Components**: identifies unique and reusable components
+  - **UseState**: state variables for all data manipulated by the user
+  - **Props**: information flow from parent to child components
+  - **Lifting**: work with events and move information upwards
+- **GIT version control**
+- **Task Automation: Gulp**
+- **JSON**
 
-1. Añade una columna más en la cabecera de la tabla.
-2. Añade una celda más a cada fila.
-3. El contenido de la celda extra de cada fila serán los nombres de las redes sociales de cada Adalaber. Puede ser que no tenga ninguna o puede ser que tenga hasta 3.
-4. Añade un enlace `<a>` al nombre de la red social que abra la URL (o dirección) de la misma.
+## 💾 Steps to follow to use this project on your computer:
 
-### 5º Obtén los datos desde el API con un fetch
+> **NOTE:** This project has been carried out using **React Starter Kit**.
 
-Implementa la funcionalidad de traer los datos desde el servidor cuando se cargue la página. Sólo debe pedir los datos al cargar/refrescar la página y no cuando creamos una nueva adalaber o cuando usamos algún filtro.
+**First** of all, in order to have the repository on your computer:
 
-### 6º Maquetación libre
+1. Click on the top right corner > **Fork**.
+2. It will ask you to choose which GitHub user you want to fork it to. **Choose your user**.
+3. **Go to github.com/your-user/name-of-project**, **clone it** and do whatever you want, you can rename the repo, change the code, redeploy it to GitHub Pages...
+4. **Finally** and for everything to work properly, **you must disable GitHub Pages and re-enable** it so that GitHub generates the new URL correctly.
 
-![image](https://user-images.githubusercontent.com/113302094/205404853-49c98df7-549c-426a-b74b-21b96198291e.png)
+Once you have **done the fork**:
 
-## Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
-
-Este proyecto se ha realizado utilizando React.
-
-### Pasos a seguir cada vez que se quiere arrancar un proyecto desde cero:
-
-- Clona este repositorio en tu ordenador.
-- Ábrelo en tu editor de código.
-- Abre una terminal e instala las dependencias locales ejecutando en la terminal de comando:
+1. Open it in your code editor.
+2. Open a terminal and **install the local dependencies** by executing in the command terminal. Here are the ones I used to start my project:
 
 ```bash
-npm install
+npm install 
+npm install node-sass
 ```
 
-### Pasos para arrancar el proyecto:
-
-**El proyecto hay que arrancarlo cada vez que nos pongamoss a programar**, para ello ejecutaremos el comando:
+The project has to be **started** every time we start programming, to do this we will execute the **command**:
 
 ```bash
 npm start
 ```
+After running `npm start` we can start editing all the files inside the src/ folder and program comfortably 💫
 
-Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
-## Resultado final✨:
+## ✅ Final result
+<div id="header" align="center">
+<img width="954" alt="image" src="https://user-images.githubusercontent.com/113302094/211934718-9525c738-8cd4-4e03-9b50-c236811a00a0.png">
+</div>
 
-Puedes echar un vistazo a cómo quedó en Github Pages: **[Módulo 3: Ejercicio de evaluación intermedia](https://beta.adalab.es/modulo-3-evaluacion-intermedia-marocena26/)**.
 
-Cualquier aportación será bien recibida, ¡Muchas gracias! 😉.
+## ✨ Feedback 
 
+Any input is most welcome.
+
+Thank you very much! 🤗
 
