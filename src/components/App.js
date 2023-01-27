@@ -116,18 +116,48 @@ function App() {
           <td className="table__section--tbody--td">{contact.speciality}</td>
           <td className="table__section--tbody--td">
             {contact.social_networks.map((search, index) => {
-              return (
-                <li className="td__list" key={index}>
-                  <a
-                    className="td__list--link"
-                    href={search.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {search.name}
-                  </a>{" "}
-                </li>
-              );
+              if (search.name === "GitHub") {
+                return (
+                  <span className="td__list" key={index}>
+                    <a
+                      className="td__list--link"
+                      href={search.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-github-alt"></i>
+                    </a>{" "}
+                  </span>
+                );
+              } else if (search.name === "LinkedIn") {
+                return (
+                  <span className="td__list" key={index}>
+                    <a
+                      className="td__list--link"
+                      href={search.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </a>{" "}
+                  </span>
+                );
+              } else if (search.name === "Twitter") {
+                return (
+                  <span className="td__list" key={index}>
+                    <a
+                      className="td__list--link"
+                      href={search.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-twitter"></i>
+                    </a>{" "}
+                  </span>
+                );
+              } else {
+                return null;
+              }
             })}
           </td>
         </tr>
